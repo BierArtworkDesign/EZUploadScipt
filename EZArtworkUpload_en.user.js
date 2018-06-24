@@ -47,7 +47,9 @@
     //reloads the site if necessary
     if ($('SubmitItemForm').file.value.length !== 0 && true){
         $J('html, body').animate({ scrollTop: 0});
-        window.location.reload(true);
+        setTimeout(function(){
+            window.location.reload(true);
+        }, 100);
     }
     //notices if an artwork was selected and then does "something"*
     var input_file_artwork = document.getElementById("file");
