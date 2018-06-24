@@ -47,7 +47,9 @@
     //Lädt die Seite automatisch neu, falls nötig
     if ($('SubmitItemForm').file.value.length !== 0 && true){
         $J('html, body').animate({ scrollTop: 0});
-        window.location.reload(true);
+        setTimeout(function(){
+            window.location.reload(true);
+        }, 100);
     }
     //bemerkt, wenn ein Bild ausgewählt wird, und macht dann "etwas"*
     var input_file_artwork = document.getElementById("file");
