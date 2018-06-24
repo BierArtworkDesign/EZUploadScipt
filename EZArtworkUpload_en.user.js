@@ -14,7 +14,7 @@
     var noRightsBier = 0;
     //Notification that the Script is active and adds a button to reload the site
     $J('.pageTitle').before('<div><div class="bier_script_activated" style="float:left;color:#9EEF11;font-size:24px;margin-top:14px">Bier\'s EZ Upload Script is active!</div>'
-                            +'<div class="btnv6_white_transparent btn_medium bier_reset_button" id="bier_reset_button" style="margin-top:8px;margin-right:7px;float:right"><span>Seite zurücksetzen</span></div></div>');
+                            +'<div class="btnv6_white_transparent btn_medium bier_reset_button" id="bier_reset_button" style="margin-top:8px;margin-right:7px;float:right"><span>Reset Site</span></div></div>');
     $J('.pageTitle').attr('style','clear:left').css({"padding-top":"10px"});
     //adds color animation css for warning messages
     $J('head').after('<style>@keyframes colorchange{0%   {background: black;}12%   {background: #962B19;}25%  {background: black;}37%  {background : #962B19;}50%  {background: black;}62%  {background: #962B19;}75%  {background: black;}87% {background: #962B19;}100% {background: #black;}}'
