@@ -15,7 +15,7 @@
     //Hinweis dass das Script aktiv ist
     $J('.pageTitle').after('<div class="pageTitle bier_script_activated" style="text-align:right;color:#9EEF11">Bier\'s EZ Upload Script activated!</div>');
     //Farbanimation für Warnungen
-    $J('head').after('<style>@keyframes colorchange{0%   {background: black;}12%   {background: #962B19;}25%  {background: black;}37%  {background : #962B19;}50%  {background: black;}62%  {background: #962B19;}75%  {background: black;}87% {background: #962B19;}100% {background: #black;}}@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */{0%   {background: black;}25%  {background: #962B19;}37%  {background : black;}50%  {background: #962B19;}75%  {background: black;}87% {background: #962B19;}100% {background: #black;}}</style>')
+    $J('head').after('<style>@keyframes colorchange{0%   {background: black;}12%   {background: #962B19;}25%  {background: black;}37%  {background : #962B19;}50%  {background: black;}62%  {background: #962B19;}75%  {background: black;}87% {background: #962B19;}100% {background: #black;}}@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */{0%   {background: black;}25%  {background: #962B19;}37%  {background : black;}50%  {background: #962B19;}75%  {background: black;}87% {background: #962B19;}100% {background: #black;}}</style>');
     //Gibt automatisch einen Titel ein
     $J('#title').val('Artwork by Bier');
     //Ändert den Hintergrund der Sichtbarkeitsoptionen
@@ -30,14 +30,14 @@
             $J('#title').val('Artwork by Bier');
         }
         //Falls kein Bild ausgewählt wurde, scrollt die Seite zum Auswahlfeld und blinkt für 6 Sekunden rot/schwarz
-        if ($('SubmitItemForm').file.value.length == 0 && true){
+        if ($('SubmitItemForm').file.value.length === 0 && true){
             $J('#file').css({ "animation": "colorchange 6s",
                             "-webkit-animation": "colorchange 6s"});
             $J('html, body').animate({
                 scrollTop: $J("#PreviewImage").offset().top
             }, 400);
             //Wenn diese Warnung ein zweites Mal ausgelöst wird erscheint ein PopUp
-            if(noImageBier == 0){
+            if(noImageBier === 0){
                 noImageBier = 1;
                 return false;
             }
@@ -50,7 +50,7 @@
                 scrollTop: $J("#agree_terms").offset().top
             }, 400);
             //Wenn diese Warnung ein zweites Mal ausgelöst wird erscheint ein PopUp
-            if(noRightsBier == 0){
+            if(noRightsBier === 0){
                 noRightsBier = 1;
                 return false;
             }
