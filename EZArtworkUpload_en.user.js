@@ -15,7 +15,7 @@
     //Notification that the Script is active
     $J('.pageTitle').after('<div class="pageTitle bier_script_activated" style="text-align:right;color:#9EEF11">Bier\'s EZ Upload Script activated!</div>');
     //adds color animation css for warning messages
-    $J('head').after('<style>@keyframes colorchange{0%   {background: black;}12%   {background: #962B19;}25%  {background: black;}37%  {background : #962B19;}50%  {background: black;}62%  {background: #962B19;}75%  {background: black;}87% {background: #962B19;}100% {background: #black;}}@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */{0%   {background: black;}25%  {background: #962B19;}37%  {background : black;}50%  {background: #962B19;}75%  {background: black;}87% {background: #962B19;}100% {background: #black;}}</style>')
+    $J('head').after('<style>@keyframes colorchange{0%   {background: black;}12%   {background: #962B19;}25%  {background: black;}37%  {background : #962B19;}50%  {background: black;}62%  {background: #962B19;}75%  {background: black;}87% {background: #962B19;}100% {background: #black;}}@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */{0%   {background: black;}25%  {background: #962B19;}37%  {background : black;}50%  {background: #962B19;}75%  {background: black;}87% {background: #962B19;}100% {background: #black;}}</style>');
     //sets the title
     $J('#title').val('Artwork by Bier');
     //changes the backgroundcolor of the visibility options
@@ -30,14 +30,14 @@
             $J('#title').val('Artwork by Bier');
         }
         //if no picture is selected, the page scrolls up to the image selection and starts blinking red for 6 seconds
-        if ($('SubmitItemForm').file.value.length == 0 && true){
+        if ($('SubmitItemForm').file.value.length === 0 && true){
             $J('#file').css({ "animation": "colorchange 6s",
                             "-webkit-animation": "colorchange 6s"});
             $J('html, body').animate({
                 scrollTop: $J("#PreviewImage").offset().top
             }, 400);
             //if this warning gets triggerd a second time, a alert popup will appeare
-            if(noImageBier == 0){
+            if(noImageBier === 0){
                 noImageBier = 1;
                 return false;
             }
@@ -50,7 +50,7 @@
                 scrollTop: $J("#agree_terms").offset().top
             }, 400);
             //if this warning gets triggerd a second time, a alert popup will appeare
-            if(noRightsBier == 0){
+            if(noRightsBier === 0){
                 noRightsBier = 1;
                 return false;
             }
