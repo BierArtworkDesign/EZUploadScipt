@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Steam Long Artwork EZ Upload
+// @name         Bier's EZ Long Artwork Upload Script
 // @namespace    https://steamcommunity.com/id/chris_nbg/
 // @version      1.0en
 // @description  Adds a button to the artwork upload page that makes it easy to upload long artworks. Also helps at all steps.
