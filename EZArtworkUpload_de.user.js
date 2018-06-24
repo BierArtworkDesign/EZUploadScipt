@@ -23,7 +23,7 @@
     $J('#title').val('Artwork by Bier');
     //Ändert den Hintergrund der Sichtbarkeitsoptionen
     $J('.visiblityOptionsDesc').css({ background: "#c17800",color:"#FFFFFF" });
-    //Fügt die besagte Schaltfläche hinzu, unten zwischen Abbrechen und Speichern
+    //Fügt die besagte Schaltfläche zum Hochladen hinzu, unten zwischen Abbrechen und Speichern
     $J('.cancelButton').after('<div class="btnv6_white_transparent btn_medium bier_upload_button" id="bier_upload_button" style="margin-right:5px"><span>Hochladen als langes Artwork</span></div>');
     //Fügt den Text "Gebe einen Title ein" hinzu, der erscheint, wenn versucht wird ein Artwork ohne Titel hochzuladen
     $J('#title').after('<label for=title id="title_marker_bier">\<-- Gebe einen Titel ein</label>');
