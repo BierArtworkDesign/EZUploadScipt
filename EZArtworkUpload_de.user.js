@@ -2,7 +2,7 @@
 // @name         Steam Long Artwork EZ Upload
 // @namespace    https://steamcommunity.com/id/chris_nbg/
 // @version      1.0de
-// @description  Fügt auf der Artwork Upload Seite eine Schaltfläche hinzu, die das Hochladen von langen Artworks vereinfacht.
+// @description  Fügt auf der Artwork Upload Seite eine Schaltfläche hinzu, die das Hochladen von langen Artworks vereinfacht. Hilft auch bei den einzelnen Schritten.
 // @author       Bier
 // @match        https://steamcommunity.com/sharedfiles/edititem/767/3/
 // @grant        none
@@ -14,16 +14,16 @@
     var noRightsBier = 0;
     //Hinweis, dass das Script aktiv ist und fügt eine Schaltfläche hinzu, um die Seite neu zu laden
     $J('.pageTitle').before('<div><div class="bier_script_activated" style="float:left;color:#9EEF11;font-size:24px;margin-top:14px">Bier\'s EZ Upload Script ist aktiviert!</div>'
-                           +'<div class="btnv6_white_transparent btn_medium bier_reset_button" id="bier_reset_button" style="margin-top:8px;margin-right:7px;float:right"><span>Seite zurücksetzen</span></div></div>');
+                            +'<div class="btnv6_white_transparent btn_medium bier_reset_button" id="bier_reset_button" style="margin-top:8px;margin-right:7px;float:right"><span>Seite zurücksetzen</span></div></div>');
     $J('.pageTitle').attr('style','clear:left').css({"padding-top":"10px"});
     //Farbanimation für Warnungen
     $J('head').after('<style>@keyframes colorchange{0%   {background: black;}12%   {background: #e20b00;}25%  {background: black;}37%  {background : #e20b00;}50%  {background: black;}62%  {background: #e20b00;}75%  {background: black;}87%  {background: #e20b00;}100% {background: #black;}}'
                      +'@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */{0%   {background: black;}25%  {background: #e20b00;}37%  {background : black;}50%  {background: #e20b00;}75%  {background: black;}87% {background: #e20b00;}100% {background: #black;}}</style>');
     //Gibt automatisch einen Titel ein
     $J('#title').val('Artwork by Bier');
-    //Ändert den Hintergrund der Sichtbarkeitsoptionen
+    //Ändert die Hintergrundfarbe der Sichtbarkeitsoptionen
     $J('.visiblityOptionsDesc').css({ background: "#c17800",color:"#FFFFFF" });
-    //Fügt die besagte Schaltfläche zum Hochladen hinzu, unten zwischen Abbrechen und Speichern
+    //Fügt die besagte Schaltfläche hinzu, unten zwischen Abbrechen und Speichern
     $J('.cancelButton').after('<div class="btnv6_white_transparent btn_medium bier_upload_button" id="bier_upload_button" style="margin-right:5px"><span>Hochladen als langes Artwork</span></div>');
     //Fügt den Text "Gebe einen Title ein" hinzu, der erscheint, wenn versucht wird ein Artwork ohne Titel hochzuladen
     $J('#title').after('<label for=title id="title_marker_bier">\<-- Gebe einen Titel ein</label>');
