@@ -21,6 +21,8 @@
                      +'@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */{0%   {background: black;}25%  {background: #e20b00;}37%  {background : black;}50%  {background: #e20b00;}75%  {background: black;}87% {background: #e20b00;}100% {background: #black;}}</style>');
     //Gibt automatisch einen Titel ein
     $J('#title').val('Artwork by Bier');
+    //Gibt automatisch eine Beschreibung ein
+    $J('#description').val('Made with ♥ by [url=https://steamcommunity.com/profiles/76561197993662605]Bier[/url]');
     //Ändert die Hintergrundfarbe der Sichtbarkeitsoptionen
     $J('.visiblityOptionsDesc').css({ background: "#c17800",color:"#FFFFFF" });
     //Fügt die besagte Schaltfläche hinzu, unten zwischen Abbrechen und Speichern
