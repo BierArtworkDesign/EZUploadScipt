@@ -21,6 +21,8 @@
                      +'@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */{0%   {background: black;}25%  {background: #962B19;}37%  {background : black;}50%  {background: #962B19;}75%  {background: black;}87% {background: #962B19;}100% {background: #black;}}</style>')
     //sets the title
     $J('#title').val('Artwork by Bier');
+    //sets the description
+    $J('#description').val('Made with ♥ by [url=https://steamcommunity.com/profiles/76561197993662605]Bier[/url]');
     //changes the backgroundcolor of the visibility options
     $J('.visiblityOptionsDesc').css({ background: "#c17800",color:"#FFFFFF" });
     //adds the upload button for long artworks between the cancel-button and the original upload-button.
